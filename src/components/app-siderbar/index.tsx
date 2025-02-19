@@ -12,7 +12,7 @@ import {
 import LogoutButton from "../LogoutButton"
 
 // Menu items.
-const items = [
+export const protectedMenu = [
   {
     title: "Table de bord",
     url: "/dashboard",
@@ -32,7 +32,7 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
+              {protectedMenu.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
