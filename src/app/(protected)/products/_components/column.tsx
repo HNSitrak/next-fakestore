@@ -4,7 +4,7 @@ import { Avatar, Image } from "@radix-ui/react-avatar";
 import { ColumnDef } from "@tanstack/react-table"
 
 // This type is used to define the shape of our data.
-export interface Product {
+export interface IProduct {
   id: number;
   title: string;
   price: number;
@@ -17,7 +17,7 @@ export interface Product {
   };
 }
   
-export const columns: ColumnDef<Product>[] = [
+export const columns: ColumnDef<IProduct>[] = [
   {
     accessorKey: "title",
     header: "Nom du Produit",
