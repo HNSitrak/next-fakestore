@@ -1,4 +1,4 @@
-import { Home } from "lucide-react"
+import { Home, Package } from "lucide-react"
 
 import {
   Sidebar,
@@ -21,7 +21,7 @@ const items = [
   {
     title: "Produits",
     url: "/products",
-    icon: Home,
+    icon: Package,
   },
 ]
 
