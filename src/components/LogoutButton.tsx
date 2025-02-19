@@ -1,13 +1,16 @@
 "use client";
 
 import { useAuth } from "@/lib/auth";
+import { Button } from "./ui/button";
+import { LogOut } from "lucide-react";
 
 export default function LogoutButton() {
   const { logout } = useAuth();
 
   return (
-    <button onClick={logout} className="bg-red-500 text-white px-4 py-2">
+    <Button onClick={logout} variant={"ghost"}>
       Logout
-    </button>
+      <LogOut />
+    </Button>
   );
 }

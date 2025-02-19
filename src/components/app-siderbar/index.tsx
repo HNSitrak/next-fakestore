@@ -5,14 +5,19 @@ import {
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import LogoutButton from "../LogoutButton"
 
 // Menu items.
 const items = [
+  {
+    title: "Table de bord",
+    url: "/dashboard",
+    icon: Home,
+  },
   {
     title: "Produits",
     url: "/products",
@@ -23,9 +28,8 @@ const items = [
 export function AppSidebar() {
   return (
     <Sidebar>
-      <SidebarContent>
+      <SidebarContent className="h-full justify-between">
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
@@ -39,6 +43,11 @@ export function AppSidebar() {
                 </SidebarMenuItem>
               ))}
             </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+        <SidebarGroup>
+          <SidebarGroupContent className="flex justify-end">
+            <LogoutButton />
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useAuth } from "@/lib/auth";
-import LogoutButton from "@/components/LogoutButton";
 import { productsI, useProducts } from "@/hooks/useProducts";
 
 export default function Dashboard() {
@@ -17,7 +16,6 @@ export default function Dashboard() {
       {products?.map((p: productsI) => (
         <li key={p.id}>{p.title}</li>
         ))}
-      <LogoutButton />
     </div>
   );
 }
