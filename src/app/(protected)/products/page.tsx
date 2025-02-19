@@ -1,13 +1,27 @@
 'use client';
 
+import api from "@/services/api";
+import { useQuery } from "@tanstack/react-query";
+import { DataTable } from "./_components/data-table";
+import { columns } from "./_components/column";
+import { TableSkeleton } from "./_components/table-skeleton";
+
 const ProductsPage = () => {
 
   // query using tanstack query for getting products
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>Products Page</h1>
-    </div>
-  );
-};
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ["products"],
+    queryFn: async () => await api.get("/products")
+  });
 
+  return (
+    <div className="container mx-auto p-10">
+      {isLoading && <TableSkeleton />}
+      {isError && <p>Error</p>}
+      {data && (
+        <DataTable columns={columns} data={data} />)}
+      </div>
+)
+};
+      
 export default ProductsPage;
