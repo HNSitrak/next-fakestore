@@ -1,4 +1,4 @@
-import { Home, Package } from "lucide-react"
+import { Home, Package, User } from "lucide-react"
 
 import {
   Sidebar,
@@ -22,6 +22,11 @@ export const protectedMenu = [
     title: "Produits",
     url: "/products",
     icon: Package,
+  },
+  {
+    title: "Utilisateurs",
+    url: "/users",
+    icon: User,
   },
 ]
 
