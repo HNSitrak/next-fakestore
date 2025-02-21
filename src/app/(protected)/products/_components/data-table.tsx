@@ -14,16 +14,20 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table"  
+import React from "react"
+import SearchInput from "./search-input"
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
-  data: TData[]
+  data: TData[],
+  onChageSearch: (value: string) => void;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
+  onChageSearch,
 }: DataTableProps<TData, TValue>) {
   const table = useReactTable({
     data,
@@ -33,6 +37,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className="rounded-md border">
+      <SearchInput onSearch={(value: string) => onChageSearch(value)} placeholder="Rechercher par titre..." />
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
