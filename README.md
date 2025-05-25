@@ -22,12 +22,13 @@ Application de test développée avec **Next.js** pour consommer l’API [FakeSt
    ```bash
    git clone https://github.com/HobyNyAina/next-fakestore.git
    cd next-fakestore
+   ```
 
 2. Installez les dépendances :
-   
-```bash
-npm install
 
+```bash 
+npm install
+```
 
 🧪 Lancer l’application
 
@@ -36,9 +37,11 @@ Pour construire l’application et la lancer en mode production :
 ```bash
 npm run build
 npm start
+```
 
 📁 Structure du projet
 
+```
 next-fakestore/
 ├── pages/             # Pages Next.js
 ├── components/        # Composants réutilisables
@@ -46,7 +49,7 @@ next-fakestore/
 ├── styles/            # Fichiers CSS
 ├── package.json       # Dépendances et scripts
 └── README.md          # Ce fichier
-
+```
 
 👤 Auteur
 
