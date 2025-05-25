@@ -24,7 +24,8 @@ Application de test développée avec **Next.js** pour consommer l’API [FakeSt
    cd next-fakestore
 
 2. Installez les dépendances :
-
+   
+```bash
 npm install
 
 
@@ -32,6 +33,7 @@ npm install
 
 Pour construire l’application et la lancer en mode production :
 
+```bash
 npm run build
 npm start
 
