@@ -19,10 +19,10 @@ Application de test développée avec **Next.js** pour consommer l’API [FakeSt
 
 1. Clonez le dépôt :
 
-   ```bash
-   git clone https://github.com/HobyNyAina/next-fakestore.git
-   cd next-fakestore
-   ```
+```bash
+git clone https://github.com/HobyNyAina/next-fakestore.git
+cd next-fakestore
+```
 
 2. Installez les dépendances :
 
