@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Next FakeStore
 
-## Getting Started
+Une application e-commerce moderne développée avec Next.js, TypeScript et Tailwind CSS utilisant l’API FakeStore pour afficher des produits dynamiques.
 
-First, run the development server:
+🚀 Aperçu
+Next FakeStore est une boutique en ligne responsive permettant aux utilisateurs de :
+Parcourir les produits
+Voir les détails d’un produit
+Ajouter des articles au panier
+Naviguer dans une interface moderne et fluide
+Profiter d’un design responsive adapté mobile et desktop
 
-```bash
+🛠️ Technologies utilisées
+Next.js
+React
+TypeScript
+Tailwind CSS
+FakeStore API
+
+📦 Installation
+Clonez le projet :
+Bash
+git clone https://github.com/HNSitrak/next-fakestore.git
+
+Accédez au dossier :
+Bash
+cd next-fakestore
+
+Basculé sur la branche develop
+Bash
+git checkout develop
+
+Installez les dépendances :
+Bash
+npm install
+
+Lancez le serveur de développement :
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+L’application sera disponible sur :
+Bash
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📁 Structure du projet
+Bash
+next-fakestore/
+│
+├── app/
+├── components/
+├── public/
+├── styles/
+├── types/
+├── package.json
+└── README.md
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✨ Fonctionnalités
+✅ Affichage dynamique des produits
+✅ Responsive design
+✅ Navigation rapide avec App Router
+✅ Gestion des composants réutilisables
+✅ Interface utilisateur moderne
+✅ Optimisation des performances
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔗 API utilisée
+FakeStore API
