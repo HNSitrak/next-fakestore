@@ -26,6 +26,10 @@ Accédez au dossier :
 Bash
 cd next-fakestore
 
+Basculé sur la branche develop
+Bash
+git checkout develop
+
 Installez les dépendances :
 Bash
 npm install
@@ -39,8 +43,9 @@ Bash
 http://localhost:3000
 
 📁 Structure du projet
-next-fakestore/
 Bash
+next-fakestore/
+│
 ├── app/
 ├── components/
 ├── public/
