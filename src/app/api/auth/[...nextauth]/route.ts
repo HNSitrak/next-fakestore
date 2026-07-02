@@ -11,20 +11,32 @@ const handler = NextAuth({
         password: { label: "Password", type: "password", placeholder: "Enter password" },
       },
       async authorize(credentials) {
+        if (!credentials?.username || !credentials?.password) {
+          return null;
+        }
+
         const res = await fetch(`${Configs.API_URL}/auth/login`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+          },
           body: JSON.stringify({
-            username: credentials?.username,
-            password: credentials?.password,
+            username: credentials.username,
+            password: credentials.password,
           }),
         });
 
-        if (!res.ok) return null;
+        if (!res.ok) {
+          return null;
+        }
 
         const user = await res.json();
-        return { id: credentials?.username, token: user.token };
-      },
+
+        return {
+          id: credentials.username,
+          token: user.token,
+        };
+      }
     }),
   ],
   session: { strategy: "jwt" },
